@@ -1,0 +1,67 @@
+<html>
+    <app-header></app-header>
+
+    <div class="container">
+        <div class="jumbotron">
+            <div class="row text-center">
+                <div class="col-lg-4">
+                    <div class="text-center">
+                        <div>
+                            <img src="https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/201142.png"
+                                 class="img-fluid">
+                        </div>
+                    </div>
+                    <h2 class="name">Kevin Durant</h2>
+                    <h4 class="number">#7</h4>
+                    <h4>Forward</h4>
+                </div>
+                <div class="col-lg-8">
+                    <table class="table">
+                        <tbody>
+                        <tr>
+                            <th>29 September 1988</th>
+                            <td>31 yrs old</td>
+                        </tr>
+                        <tr>
+                            <th>6 ft 10 in</th>
+                            <td>240 lb</td>
+                        </tr>
+                        <tr>
+                            <th>2007 rnd1 2</th>
+                            <td>Texas</td>
+                        </tr>
+                        <tr>
+                            <th class="notice">2x NBA Champion</th>
+                            <td class="notice">10x NBA All-Star</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <p class="about">Kevin Wayne Durant is an American professional basketball player for the Brooklyn Nets of the National 
+                        Basketball Association (NBA). He played one season of college basketball for the University of Texas, and was selected as 
+                        the second overall pick by the Seattle SuperSonics in the 2007 NBA draft. He played nine seasons with the franchise, 
+                        which became the Oklahoma City Thunder in 2008, before signing with the Golden State Warriors in 2016, winning back-to-back
+                         championships in 2017 and 2018.
+
+                    </p>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-lg-12">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>.</div>
+
+    <div class="teste">
+    <button #teste (click)="show = !show">NEWS</button>
+  
+
+    </div>    
+
+    <div class="news" *ngIf="show">
+        <app-news [assunto]="assuntoRecebido"></app-news>
+    </div>
+
+
+</html>

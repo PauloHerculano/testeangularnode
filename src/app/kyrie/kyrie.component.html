@@ -1,0 +1,63 @@
+<html>
+    <app-header></app-header>
+
+    <div class="container">
+        <div class="jumbotron">
+            <div class="row text-center">
+                <div class="col-lg-4">
+                    <div class="text-center">
+                        <div>
+                            <img src="https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/202681.png"
+                                 class="img-fluid">
+                        </div>
+                    </div>
+                    <h2 class="name">Kyrie Irving</h2>
+                    <h4 class="number">#11</h4>
+                    <h4>Point Guard</h4>
+                </div>
+                <div class="col-lg-8">
+                    <table class="table">
+                        <tbody>
+                        <tr>
+                            <th>06 December 1994</th>
+                            <td>28 yrs old</td>
+                        </tr>
+                        <tr>
+                            <th>6 ft 2 in</th>
+                            <td>195 lb</td>
+                        </tr>
+                        <tr>
+                            <th>2011 rnd1 1</th>
+                            <td>Duke</td>
+                        </tr>
+                        <tr>
+                            <th class="notice">6x NBA All-Star</th>
+                            <td class="notice">2011 NBA First team</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <p class="about">Kyrie Andrew Irving is an American professional basketball 
+                        player for the Brooklyn Nets of the National Basketball Association (NBA). He was named the Rookie of the Year after 
+                        being selected by the Cleveland Cavaliers with the first overall pick in the 2011 NBA draft. 
+                        A six-time All-Star and two-time member of the All-NBA Team, he won an NBA championship with the Cavaliers in 2016.</p>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-lg-12">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>.</div>
+
+    <div class="teste">
+    <button #teste (click)="show = !show">NEWS</button>
+  
+
+    </div>    
+
+    <div class="news" *ngIf="show">
+        <app-news [assunto]="assuntoRecebido"></app-news>
+    </div>
+
+</html>

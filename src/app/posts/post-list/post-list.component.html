@@ -1,0 +1,19 @@
+<mat-accordion multi="thrue" *ngIf="posts.length > 0; "> 
+                                <!-- multi thrue deixa abrir mais de uma postagem de uma vez  -->
+    <mat-expansion-panel *ngFor="let post of posts">
+
+        <mat-expansion-panel-header>
+            {{ post.title }}
+        </mat-expansion-panel-header>
+        
+        <p>{{ post.content }}</p>
+
+        <mat-action-row>
+            <a mat-button color="primary" [routerLink]="['/edit', post.id]">EDIT</a>
+            <button mat-button color="warn" (click)="onDelete(post.id)">DELETE</button>
+        </mat-action-row>
+
+    </mat-expansion-panel>
+</mat-accordion>
+<!-- <ng-template #noPosts class="info-text mat-body-1">No posts added yet!</ng-template> outra forma de fazer nao usando outro if-->
+<p *ngIf="posts.length <= 0" class="info-text mat-body-1">No posts added yet!</p> 

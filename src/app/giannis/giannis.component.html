@@ -1,0 +1,63 @@
+<html>
+    <app-header></app-header>
+
+    <div class="container">
+        <div class="jumbotron">
+            <div class="row text-center">
+                <div class="col-lg-4">
+                    <div class="text-center">
+                        <div>
+                            <img src="https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203507.png"
+                                 class="img-fluid">
+                        </div>
+                    </div>
+                    <h2 class="name">Giannis Antetokounmpo</h2>
+                    <h4 class="number">#34</h4>
+                    <h4>Forward</h4>
+                </div>
+                <div class="col-lg-8">
+                    <table class="table">
+                        <tbody>
+                        <tr>
+                            <th>06 December 1994</th>
+                            <td>25 yrs old</td>
+                        </tr>
+                        <tr>
+                            <th>6 ft 11 in</th>
+                            <td>242 lb</td>
+                        </tr>
+                        <tr>
+                            <th>2013 rnd1 15</th>
+                            <td>Greek</td>
+                        </tr>
+                        <tr>
+                            <th class="notice">4x NBA All-Star</th>
+                            <td class="notice">2013 NBA First team</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <p class="about">Giannis Sina Ougko Antetokounmpo is a Greek professional basketball player for the Milwaukee Bucks of 
+                        the National Basketball Association (NBA). Born in Greece to Nigerian parents, Antetokounmpo began playing basketball 
+                        for the youth teams of Filathlitikos in Athens. In 2011, he began playing for the club's senior team before entering 
+                        the 2013 NBA draft, where he was selected 15th overall by the Bucks. Antetokounmpo's combination of size, speed and 
+                        ball-handling skills led to his nickname the "Greek Freak".</p>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-lg-12">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>.</div>
+
+    <div class="teste">
+    <button #teste (click)="show = !show">NEWS</button>
+
+    </div>    
+
+    <div class="news" *ngIf="show">
+        <app-news [assunto]="assuntoRecebido"></app-news>
+    </div>
+
+</html>

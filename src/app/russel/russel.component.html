@@ -1,0 +1,64 @@
+<html>
+    <app-header-ua></app-header-ua>
+
+    <div class="container">
+        <div class="jumbotron">
+            <div class="row text-center">
+                <div class="col-lg-4">
+                    <div class="text-center">
+                        <div>
+                            <img src="https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/201566.png"
+                                 class="img-fluid">
+                        </div>
+                    </div>
+                    <h2 class="name">Russell Westbrook</h2>
+                    <h4 class="number">#0</h4>
+                    <h4>Point Guard</h4>
+                </div>
+                <div class="col-lg-8">
+                    <table class="table">
+                        <tbody>
+                        <tr>
+                            <th>12 November 1988</th>
+                            <td>31 yrs old</td>
+                        </tr>
+                        <tr>
+                            <th>6 ft 3 in</th>
+                            <td>200 lb</td>
+                        </tr>
+                        <tr>
+                            <th>2008 rnd1 4</th>
+                            <td>UCLA</td>
+                        </tr>
+                        <tr>
+                            <th class="notice">9x NBA All-Star</th>
+                            <td class="notice">2008 NBA First team</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <p class="about">Russell Westbrook III is a nine-time NBA All-Star and earned the NBA Most Valuable Player
+                         Award for the 2016–17 season. He is also an eight-time All-NBA Team member, led the league in scoring in 2014–15
+                          and 2016–17, and won back-to-back NBA All-Star Game Most Valuable Player awards in 2015 and 2016. In 2017,
+                           the year he won the league MVP award, Westbrook became one of two players in NBA history to average a triple-double
+                            for a season, along with Oscar Robertson in 1962. </p>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-lg-12">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>.</div>
+
+    <div class="teste">
+    <button #teste (click)="show = !show">NEWS</button>
+  
+
+    </div>    
+
+    <div class="news" *ngIf="show">
+        <app-news [assunto]="assuntoRecebido"></app-news>
+    </div>
+
+</html>

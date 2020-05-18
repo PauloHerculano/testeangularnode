@@ -1,0 +1,64 @@
+<html>
+    <app-header></app-header>
+
+    <div class="container">
+        <div class="jumbotron">
+            <div class="row text-center">
+                <div class="col-lg-4">
+                    <div class="text-center">
+                        <div>
+                            <img src="https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/2544.png"
+                                 class="img-fluid">
+                        </div>
+                    </div>
+                    <h2 class="name">LeBron James</h2>
+                    <h4 class="number">#23</h4>
+                    <h4>Forward</h4>
+                </div>
+                <div class="col-lg-8">
+                    <table class="table">
+                        <tbody>
+                        <tr>
+                            <th>30 December 1984</th>
+                            <td>35 yrs old</td>
+                        </tr>
+                        <tr>
+                            <th>6 ft 9 in</th>
+                            <td>250 lb</td>
+                        </tr>
+                        <tr>
+                            <th>2003 rnd1 1</th>
+                            <td>St. Vincent-St. Mary</td>
+                        </tr>
+                        <tr>
+                            <th class="notice">3x NBA Champion</th>
+                            <td class="notice">16x NBA All-Star</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <p class="about">LeBron Raymone James is widely considered to be one of the 
+                         greatest basketball players in NBA history. His accomplishments 
+                         include three NBA championships, four NBA Most Valuable Player (MVP) Awards, three Finals MVP Awards, and two Olympic 
+                         gold medals. James holds the all-time record for playoffs points, is third in all-time points, and eighth in all-time assists. 
+                         James was selected to the All-NBA First Team twelve times (all-time record), made the All-Defensive First Team five times, 
+                         and has played in sixteen All-Star Games, in which he was selected All-Star MVP three times.</p>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-lg-12">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>.</div>
+
+    <div class="teste">
+    <button #teste (click)="show = !show">NEWS</button>
+  
+    </div>    
+
+    <div class="news" *ngIf="show">
+        <app-news [assunto]="assuntoRecebido"></app-news>
+    </div>
+
+</html>

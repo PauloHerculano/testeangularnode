@@ -1,0 +1,62 @@
+<html>
+    <app-header-ua></app-header-ua>
+
+    <div class="container">
+        <div class="jumbotron">
+            <div class="row text-center">
+                <div class="col-lg-4">
+                    <div class="text-center">
+                        <div>
+                            <img src="https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/202689.png"
+                                 class="img-fluid">
+                        </div>
+                    </div>
+                    <h2 class="name">Kemba Walker</h2>
+                    <h4 class="number">#8</h4>
+                    <h4>Point Guard</h4>
+                </div>
+                <div class="col-lg-8">
+                    <table class="table">
+                        <tbody>
+                        <tr>
+                            <th>08 May 1990</th>
+                            <td>30 yrs old</td>
+                        </tr>
+                        <tr>
+                            <th>6 ft 0 in</th>
+                            <td>184 lb</td>
+                        </tr>
+                        <tr>
+                            <th>2011 rnd1 9</th>
+                            <td>Connecticut</td>
+                        </tr>
+                        <tr>
+                            <th class="notice">4x NBA All-Star</th>
+                            <td class="notice">2011 NBA First team</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <p class="about">Kemba Hudley Walker was picked ninth overall by the Charlotte Bobcats in the 2011 NBA draft. He grew up in The Bronx, New York. After graduating from Rice High School in 2008,
+                         he went on to play college basketball for the Connecticut Huskies. In their 2010–11 season, Walker was the nation's second-leading scorer in college basketball and was named consensus First Team All-American; 
+                        he also led the Huskies to the 2011 NCAA championship and claimed the tournament’s Most Outstanding Player award. Walker is a four-time NBA All-Star.</p>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-lg-12">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>.</div>
+
+    <div class="teste">
+    <button #teste (click)="show = !show">NEWS</button>
+  
+
+    </div>    
+
+    <div class="news" *ngIf="show">
+        <app-news [assunto]="assuntoRecebido"></app-news>
+    </div>
+
+</html>

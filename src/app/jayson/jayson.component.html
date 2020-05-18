@@ -1,0 +1,64 @@
+<html>
+    <app-header-ua></app-header-ua>
+
+    <div class="container">
+        <div class="jumbotron">
+            <div class="row text-center">
+                <div class="col-lg-4">
+                    <div class="text-center">
+                        <div>
+                            <img src="https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1628369.png"
+                                 class="img-fluid">
+                        </div>
+                    </div>
+                    <h2 class="name">Jayson Tatum</h2>
+                    <h4 class="number">#0</h4>
+                    <h4>Forward / Guard</h4>
+                </div>
+                <div class="col-lg-8">
+                    <table class="table">
+                        <tbody>
+                        <tr>
+                            <th>03 March 1998</th>
+                            <td>22 yrs old</td>
+                        </tr>
+                        <tr>
+                            <th>6 ft 8 in</th>
+                            <td>210 lb</td>
+                        </tr>
+                        <tr>
+                            <th>2017 rnd1 3</th>
+                            <td>Duke</td>
+                        </tr>
+                        <tr>
+                            <th class="notice">2020 NBA All-Star</th>
+                            <td class="notice">2017 NBA First team</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <p class="about">Jayson Christopher Tatum is an American professional basketball player for the Boston Celtics
+                         of the National Basketball Association (NBA). A native of St. Louis, Missouri, Tatum attended hometown Chaminade College 
+                         Preparatory School, where he was rated a five-star recruit and regarded as one of the top players in the Class of 2016 by 
+                         recruiting services. He played college basketball for the Duke Blue Devils before entering the 2017 NBA draft. 
+                         He was selected with the third overall pick by the Boston Celtics. He won the 2019 Skills Challenge during NBA 
+                         All-Star Weekend.</p>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-lg-12">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>.</div>
+
+    <div class="teste">
+    <button #teste (click)="show = !show">NEWS</button>
+  
+    </div>    
+
+    <div class="news" *ngIf="show">
+        <app-news [assunto]="assuntoRecebido"></app-news>
+    </div>
+
+</html>

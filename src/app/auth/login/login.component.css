@@ -1,0 +1,46 @@
+
+html{
+  position: relative;
+}
+html::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-image: url(https://images.radio.com/kdkafm/USATSI_9190713_1.jpg);
+  filter: brightness(30%);
+}
+html-inside {
+  /* This will make it stack on top of the ::before */
+  position: relative;
+}
+
+
+mat-form-field {
+  width: 100%;
+  height: 100%;
+  
+}
+
+mat-spinner {
+  margin: auto;
+  
+}
+
+mat-card{
+  width: 350px;
+  height: 250px;
+
+  margin-left:auto;
+  margin-right:auto;  
+}
+
+.login-box{
+  margin: auto;
+  margin-top: 15%;
+}
+
+h2{
+  margin-left: 40%;
+}
+

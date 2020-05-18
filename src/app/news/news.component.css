@@ -1,0 +1,26 @@
+
+
+mat-accordion{
+    margin-top: 40px;
+    width: 100%;
+    margin-left: 150px;
+    margin-right: 150px;
+    }
+
+
+    :host{
+        display: block;
+        margin-top: 1rem;
+    }
+    
+    .info-text{
+        text-align: center;
+    }
+
+.testea, 
+.testeb,
+.testec,
+.tested{
+    position: relative;
+    float: left;
+}

@@ -1,0 +1,13 @@
+<html>
+    <app-header></app-header> 
+<body>
+<div class="pesquisa">
+    <app-assuntoa (envioAssunto)="onAssuntoPassado($event)"></app-assuntoa>
+</div>
+<div class="news">
+    <app-news [assunto]="assuntoRecebido"></app-news>
+</div>
+
+</body>
+</html>
+

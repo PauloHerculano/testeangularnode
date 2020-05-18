@@ -1,0 +1,25 @@
+html{
+  background-color: #000;
+
+}
+
+body{
+  margin-left: 410px;
+}
+p{
+  color: white;
+}
+
+.pesquisa{
+  margin-top: 40px;
+  width: 50%;
+  margin-left: 150px;
+  }
+
+.news{
+  color: white;
+  margin-left: 150px;
+  width: 50%;
+}
+
+

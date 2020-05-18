@@ -1,0 +1,86 @@
+
+
+<mat-accordion multi="thrue" *ngIf="assunto!= ''"> 
+    <!-- multi thrue deixa abrir mais de uma postagem de uma vez  -->
+<mat-expansion-panel >
+
+<mat-expansion-panel-header>
+{{ titlea }}
+</mat-expansion-panel-header>
+
+<p>{{ contenta }}</p>
+
+<a href={{urla}}>Visit URL</a>
+
+
+<mat-action-row>
+    <p class="testa">{{ testea }}</p>
+    <button mat-button color="warn" (click)="onClicka()">ANALYZE</button>
+</mat-action-row>
+
+</mat-expansion-panel>
+
+
+<!--  -->
+
+<mat-expansion-panel >
+
+<mat-expansion-panel-header>
+{{ titleb }}
+</mat-expansion-panel-header>
+
+<p>{{ contentb }}</p>
+
+<a href={{urlb}}>Visit URL</a>
+
+<mat-action-row>
+    <p class="testb">{{ testeb }}</p>
+<button mat-button color="warn" (click)="onClickb()">ANALYZE</button>
+</mat-action-row>
+
+</mat-expansion-panel>
+
+
+<!--  -->
+
+<mat-expansion-panel >
+
+<mat-expansion-panel-header>
+{{ titlec }}
+</mat-expansion-panel-header>
+
+<p>{{ contentc }}</p>
+
+<a href={{urlc}}>Visit URL</a>
+
+<mat-action-row>
+    <p class="testc">{{ testec }}</p>
+<button mat-button color="warn" (click)="onClickc()" >ANALYZE</button>
+</mat-action-row>
+
+</mat-expansion-panel>
+
+<!--  -->
+
+
+<mat-expansion-panel >
+
+<mat-expansion-panel-header>
+{{ titled }}
+</mat-expansion-panel-header>
+
+<p>{{ contentd }}</p>
+
+<a href={{urld}}>Visit URL</a>
+
+<mat-action-row>
+    <p class="testd">{{ tested }}</p>
+<button mat-button color="warn" (click)="onClickd()">ANALYZE</button>
+</mat-action-row>
+
+</mat-expansion-panel>
+</mat-accordion>
+
+
+<!-- <ng-template #noPosts class="info-text mat-body-1">No posts added yet!</ng-template> outra forma de fazer nao usando outro if-->
+<p *ngIf="assunto == ''" class="info-text mat-body-1">Nothing to see!</p> 
