@@ -1,0 +1,33 @@
+{
+  "name": "mean-course",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "^8.0.0",
+    "@angular/cdk": "~8.2.3",
+    "@angular/common": "^8.0.0",
+    "@angular/compiler": "^8.0.0",
+    "@angular/core": "^8.0.0",
+    "@angular/forms": "^8.0.0",
+    "@angular/material": "^8.2.3",
+    "@angular/platform-browser": "^8.0.0",
+    "@angular/platform-browser-dynamic": "^8.0.0",
+    "@angular/router": "^8.0.0",
+    "@babel/polyfill": "^7.8.7",
+    "bcrypt": "^4.0.1",
+    "bcrypt-nodejs": "0.0.3",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "core-js": "^2.5.7",
+    "express": "^4.17.1",
+    "hammerjs": "^2.0.8",
+    "ibm-watson": "^5.5.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.12",
+    "mongoose-unique-validator": "^2.0.3",
+    "newsapi": "^2.4.0",
+    "rxjs": "^6.0.0",
+    "unirest": "^0.6.0",
+    "zone.js": "^0.8.26"
+  }
+}
